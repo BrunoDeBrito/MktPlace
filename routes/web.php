@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
+
     return view('welcome');
+
+});
+
+Route::get('/product', function() {
+	return \App\User::all();
 });
